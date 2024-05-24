@@ -295,7 +295,7 @@ def get_details(places):
             first_photo = photos[0]
             photo_reference = first_photo.get('photo_reference', None)
             if photo_reference:
-                api_key = "xyz"
+                api_key =  os.environ.get('MAP_API_KEY')
                 max_width = 290
                 image_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth={max_width}&photoreference={photo_reference}&key={api_key}"
 
