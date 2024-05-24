@@ -310,7 +310,7 @@ def get_details(places):
     return spots
 
 def geocode_location(location):
-    api_key = "AIzaSyAdEd1IBe15oviCLW6QXgHu-KGu3Tqk3x0"  # Make sure to set your API key in your environment variables
+    # api_key = "enter key"  # Make sure to set your API key in your environment variables
     url = "https://maps.googleapis.com/maps/api/geocode/json"
 
     params = {
