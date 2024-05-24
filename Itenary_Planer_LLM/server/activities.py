@@ -5,7 +5,7 @@ import re
 import openai
 
 # Set up the OpenAI API
-openai.api_key = "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"  # Replace with your actual API key
+openai.api_key = "xyz"  # Replace with your actual API key
 GPT_API_URL = "https://api.openai.com/v1/chat/completions"
 
 # Define the system message
@@ -259,7 +259,7 @@ def find_nearby_attractions(types, latitude, longitude, radius=10000):
         "location": f"{latitude},{longitude}",
         "radius": radius,
         "type": target,
-        "key": "AIzaSyAdEd1IBe15oviCLW6QXgHu-KGu3Tqk3x0"
+        "key": "xyz"
     }
 
     attractions = []
@@ -295,7 +295,7 @@ def get_details(places):
             first_photo = photos[0]
             photo_reference = first_photo.get('photo_reference', None)
             if photo_reference:
-                api_key = "AIzaSyAdEd1IBe15oviCLW6QXgHu-KGu3Tqk3x0"
+                api_key = "xyz"
                 max_width = 290
                 image_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth={max_width}&photoreference={photo_reference}&key={api_key}"
 
