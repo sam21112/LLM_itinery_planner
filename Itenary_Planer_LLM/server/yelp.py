@@ -68,7 +68,7 @@ def extract_keywords(text):
 
 def get_top_restaurants(latitude, longitude, **keywords):
     url = "https://api.yelp.com/v3/businesses/search"
-    api_key = "VJ-kW76HYHSjt8Tpr9GV-RsqVIQcEavs3hpVVIyO3tDlewB6FZD2TjxYh7fIRRG9Tb0C0OUPnuzbEojmFHBNjnU6OdLGppiwnc1wU9xWbA2SRwcY0VjZecL17MRiZXYx"
+    api_key = "ytz"
     headers = {"Authorization": f"Bearer {api_key}"}
 
     params = {
