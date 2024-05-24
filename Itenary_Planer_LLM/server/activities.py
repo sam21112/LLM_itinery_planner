@@ -5,7 +5,7 @@ import re
 import openai
 
 # Set up the OpenAI API
-openai.api_key = "xyz"  # Replace with your actual API key
+openai.api_key =  os.environ.get('OPENAI_API_KEY')# Replace with your actual API key
 GPT_API_URL = "https://api.openai.com/v1/chat/completions"
 
 # Define the system message
