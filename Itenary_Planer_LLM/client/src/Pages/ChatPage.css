@@ -1,0 +1,101 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+}
+.chat-container-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 90vh;
+}
+.container-landing {
+    padding: 10px;
+}
+input{
+    padding: 10px;
+}
+
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 20px;
+    max-width: 70%;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+.message.user {
+    background-color: #333;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: 30%;
+}
+
+.message.server {
+    background-color: #eee;
+    color: #333;
+    align-self: flex-start;
+    margin-right: 30%;
+}
+.restaurant-list {
+    width: 100%; /* Ensure list takes the full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align cards centrally */
+    overflow-y: auto; /* Add scroll for overflow */
+    max-height: max-content; /* Adjust height as needed */
+}
+.restaurant-card {
+    width: 50%; 
+    max-width: 600px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.restaurant-card h3 {
+    margin: 5px 0;
+}
+
+.restaurant-card p {
+    margin: 2px 0;
+}
+
+.restaurant-card input[type='checkbox'] {
+    margin-top: 10px;
+}
