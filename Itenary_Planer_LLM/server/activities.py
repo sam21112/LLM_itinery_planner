@@ -259,7 +259,7 @@ def find_nearby_attractions(types, latitude, longitude, radius=10000):
         "location": f"{latitude},{longitude}",
         "radius": radius,
         "type": target,
-        "key": "xyz"
+        "key":  os.environ.get('MAP_API_KEY')
     }
 
     attractions = []
